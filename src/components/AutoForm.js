@@ -6,8 +6,7 @@ const AutoForm = ({submitForm}) => {
         fullname: "",
         email: "",
         password: "",
-        auto: "",
-        model: "",
+       
         
     });
 
@@ -140,7 +139,7 @@ const AutoForm = ({submitForm}) => {
             <option value={values.model} name="model"> X1</option>
             </optgroup>
           </select>
-          {errors.model && <p className='error'>{errors.model}</p>}
+          
 
           </section>
 

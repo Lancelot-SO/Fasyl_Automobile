@@ -18,12 +18,7 @@ const validation = (values) => {
     } else if(!/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,64}$/.test(values.password)){
         errors.password="Ref_code must contain upercase, lowercase, number and special character!"
     }
-    if(!values.auto){
-       errors.auto = "Select an Automobile"
-    }
-    if(!values.model){
-       errors.model ="Select the model"
-    }
+    
      
   return errors;
 };
